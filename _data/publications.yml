@@ -66,8 +66,11 @@
     - name: "Junhui Gao"
       me: true
       co_primary: true
-    - name: "Xin Zhang"
-    - name: "Qingye Han"
+    - name: "Jiashun Duan"
+      co_primary: true
+    - name: "Juan Shi"
+    - nmae: "Bin Guo"
+    - name: "Yunji Liang"
     - name: "Yujiao Hu"
       # url: "https://example.com"
   venue: "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (UbiComp)"
