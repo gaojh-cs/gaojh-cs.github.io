@@ -1,6 +1,7 @@
 # 这条示例不会显示在主页。替换内容并把 `show` 改成 `true` 即可发布；
 # 新增论文时，复制完整条目并继续填写。
 # 共同第一作者：在对应作者的 `name` 下方添加 `co_primary: true`。
+# 论文 PDF 请放在 `assets/papers/`，然后把对应的 `paper` 改为注释中预留的路径。
 
 - show: true
   title: "Cooperative air-ground instant delivery by uavs and crowdsourced taxis: Joint uav station deployment and delivery scheduling"
@@ -19,10 +20,11 @@
   # 用于同一年内的排序；只需填写近似日期也可以。
   sort_date: "2024-12-01"
   # status: "Published"
-  summary: "A short optional description of the paper's main contribution."
+  summary: ""
   award: ""
   links:
-    paper: "https://example.com/paper.pdf"
+    # paper: "/assets/papers/gao-2025-tmc-cooperative-air-ground-delivery.pdf"
+    paper: ""
     doi: "10.1109/TMC.2025.3634430"
     # code: "https://github.com/example/repository"
     project: ""
@@ -40,15 +42,16 @@
     - name: "Qingye Han"
     - name: "Yujiao Hu"
       # url: "https://example.com"
-  venue: "Computers & Industrial Engieering"
+  venue: "Computers & Industrial Engineering"
   year: 2024
   # 用于同一年内的排序；只需填写近似日期也可以。
   sort_date: "2024-03-01"
   # status: "Published"
-  summary: "A short optional description of the paper's main contribution."
+  summary: ""
   award: ""
   links:
-    paper: "https://example.com/paper.pdf"
+    # paper: "/assets/papers/gao-2024-cie-sharing-instant-delivery-uavs.pdf"
+    paper: ""
     doi: "10.1016/j.cie.2024.110100"
     # code: "https://github.com/example/repository"
     project: ""
@@ -72,10 +75,11 @@
   # 用于同一年内的排序；只需填写近似日期也可以。
   sort_date: "2024-11-01"
   # status: "Published"
-  summary: "A short optional description of the paper's main contribution."
+  summary: ""
   award: ""
   links:
-    paper: "https://example.com/paper.pdf"
+    # paper: "/assets/papers/pan-gao-2024-ubicomp-air-ground-delivery.pdf"
+    paper: ""
     doi: "10.1145/3699722"
     # code: "https://github.com/example/repository"
     project: ""
@@ -100,10 +104,11 @@
   # 用于同一年内的排序；只需填写近似日期也可以。
   sort_date: "2024-07-01"
   # status: "Published"
-  summary: "A short optional description of the paper's main contribution."
+  summary: ""
   award: ""
   links:
-    paper: "https://example.com/paper.pdf"
+    # paper: "/assets/papers/gao-2024-icde-air-ground-delivery.pdf"
+    paper: ""
     doi: "10.1109/ICDE60146.2024.00120"
     # code: "https://github.com/example/repository"
     project: ""
@@ -129,10 +134,11 @@
   # 用于同一年内的排序；只需填写近似日期也可以。
   sort_date: "2024-05-01"
   # status: "Published"
-  summary: "A short optional description of the paper's main contribution."
+  summary: ""
   award: ""
   links:
-    paper: "https://example.com/paper.pdf"
+    # paper: "/assets/papers/gao-2024-jiot-uav-bus-emergency-response.pdf"
+    paper: ""
     doi: "10.1109/JIOT.2024.3382120"
     # code: "https://github.com/example/repository"
     project: ""
