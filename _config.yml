@@ -1,3 +1,6 @@
+url: "https://gaojh-cs.github.io"
+baseurl: ""
+repository: "gaojh-cs/gaojh-cs.github.io"
 layout: sidebar
 style: light
 title: "Academic Homepage"
