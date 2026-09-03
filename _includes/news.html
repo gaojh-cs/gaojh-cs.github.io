@@ -1,0 +1,15 @@
+{% assign news_items = site.data.news | where: "show", true %}
+
+<section aria-labelledby="news-heading">
+  <h2 id="news-heading" {% if site.style == 'dark' %}class="text-white"{% endif %}>News</h2>
+  <div class="github-component border border-gray-light rounded-1 bg-white p-3 text-left">
+    <ul class="news-list text-gray-dark">
+      {% for news_item in news_items %}
+        <li>
+          {% if news_item.date and news_item.date != "" %}<strong class="mr-1">{{ news_item.date }}</strong>{% endif %}
+          <div class="news-content d-inline">{{ news_item.text | markdownify }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

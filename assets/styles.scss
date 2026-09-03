@@ -25,6 +25,48 @@
   vertical-align: middle;
 }
 
+.academic-bio {
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.co-primary-mark {
+  margin-left: 1px;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+
+.news-list {
+  margin: 0;
+  padding-left: 24px;
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.news-content {
+  p {
+    display: inline;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-sidebar {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+
 .article {
   h1, h2, h3, h4,
   .highlight {

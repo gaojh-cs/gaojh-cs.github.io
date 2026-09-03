@@ -1,5 +1,20 @@
 layout: sidebar
 style: light
+title: "Academic Homepage"
+
+# 在这里编辑主页左侧显示的个人资料。
+profile:
+  name: "Junhui GAO"
+  bio: "I obtained my B.Eng. in Computer Science and Technology from Northwestern Polytechnical University in 2023. Currently, I am pursuing my Ph.D. degree at Hong Kong Jockey Club STEM Lab of Smart City under the supervision of [Prof. Yuguang Fang](https://www.cs.cityu.edu.hk/~yugufang/) at the Department of Computer Science, City University of Hong Kong. My research interests include data-driven methods, UAV applications, and Low-Altitude Economy. "
+  # 头像下方的短介绍；留空时不显示。
+  sidebar_bio: ""
+  location: "HKSAR, China"
+  email: "junhui.gao@my.cityu.edu.hk"
+  # 填写完整的 Google Scholar 个人主页网址。
+  google_scholar: "https://scholar.google.com/citations?user=kqo8nkMAAAAJ"
+  # 把正方形头像放进仓库后填写路径，例如：
+  avatar: "/assets/images/123.jpg"
+  # avatar: ""
 
 plugins:
   - jekyll-octicons
@@ -15,18 +30,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-
-projects:
-  sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  limit: 9
-  exclude:
-    archived: false
-    forks: true
-    projects:
-    # - repo-name
 
 # social_media:
   # behance: your_username
@@ -46,13 +49,13 @@ projects:
   # website: http://your_website_url
   # youtube: your_username
 
-topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+# topics:
+#   - name: CSS
+#     web_url: https://github.com/topics/css
+#     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
 
-  - name: Web design
+#   - name: Web design
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+#   - name: Sass
+#     web_url: https://github.com/topics/sass
+#     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png

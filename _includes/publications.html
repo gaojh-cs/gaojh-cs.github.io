@@ -1,0 +1,63 @@
+{% assign publications = site.data.publications | where: "show", true | sort: "sort_date" | reverse %}
+
+<section aria-labelledby="publications-heading">
+  <h2 id="publications-heading" {% if site.style == 'dark' %}class="text-white"{% endif %}>Selected Publications</h2>
+  <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}"></p>
+
+  {% if publications.size > 0 %}
+    {% assign publication_groups = publications | group_by: "year" %}
+    {% for publication_group in publication_groups %}
+      <div class="mb-5">
+        <h3 class="f3 mb-3 {% if site.style == 'dark' %}text-white{% endif %}">{{ publication_group.name }}</h3>
+        <ol class="list-style-none pl-0">
+          {% for publication in publication_group.items %}
+            <li class="github-component border border-gray-light rounded-1 bg-white p-3 mb-3 text-left">
+              <h4 class="f3 lh-condensed mb-2 text-gray-dark">{{ publication.title }}</h4>
+
+              {% assign co_primary_authors = "" | split: "" %}
+              {% if publication.authors %}
+                {% assign co_primary_authors = publication.authors | where: "co_primary", true %}
+                <p class="mb-1 text-gray-dark">
+                  {% for author in publication.authors %}
+                    {% if author.url and author.url != "" %}<a href="{{ author.url }}">{% endif %}{% if author.me %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% if author.url and author.url != "" %}</a>{% endif %}{% if author.co_primary == true %}<sup class="co-primary-mark" title="Co-primary author" aria-label="co-primary author">*</sup>{% endif %}{% unless forloop.last %}, {% endunless %}
+                  {% endfor %}
+                </p>
+              {% endif %}
+
+              <p class="mb-2 text-gray">
+                {% if publication.venue and publication.venue != "" %}<em>{{ publication.venue }}</em>{% endif %}{% if publication.venue and publication.venue != "" and publication.year %}, {% endif %}{{ publication.year }}{% if publication.status and publication.status != "" %} · {{ publication.status }}{% endif %}
+              </p>
+
+              {% if publication.award and publication.award != "" %}
+                <p class="mb-2 text-bold">🏅 {{ publication.award }}</p>
+              {% endif %}
+
+              {% if publication.summary and publication.summary != "" %}
+                <p class="mb-3 text-gray">{{ publication.summary }}</p>
+              {% endif %}
+
+              {% if co_primary_authors.size > 0 %}
+                <p class="mb-3 f6 text-gray"><em>* These authors contribute equally.</em></p>
+              {% endif %}
+
+              {% if publication.links %}
+                <div class="d-flex flex-wrap">
+                  {% if publication.links.paper and publication.links.paper != "" %}<a class="btn btn-sm mr-2 mb-2" href="{{ publication.links.paper }}">Paper</a>{% endif %}
+                  {% if publication.links.doi and publication.links.doi != "" %}<a class="btn btn-sm mr-2 mb-2" href="https://doi.org/{{ publication.links.doi }}">DOI</a>{% endif %}
+                  {% if publication.links.code and publication.links.code != "" %}<a class="btn btn-sm mr-2 mb-2" href="{{ publication.links.code }}">Code</a>{% endif %}
+                  {% if publication.links.project and publication.links.project != "" %}<a class="btn btn-sm mr-2 mb-2" href="{{ publication.links.project }}">Project</a>{% endif %}
+                  {% if publication.links.data and publication.links.data != "" %}<a class="btn btn-sm mr-2 mb-2" href="{{ publication.links.data }}">Data</a>{% endif %}
+                  {% if publication.links.slides and publication.links.slides != "" %}<a class="btn btn-sm mr-2 mb-2" href="{{ publication.links.slides }}">Slides</a>{% endif %}
+                </div>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ol>
+      </div>
+    {% endfor %}
+  {% else %}
+    <div class="github-component border border-gray-light rounded-1 bg-white p-3 text-left text-gray">
+      在 <code>_data/publications.yml</code> 中添加论文后，成果会按年份倒序显示在这里。
+    </div>
+  {% endif %}
+</section>

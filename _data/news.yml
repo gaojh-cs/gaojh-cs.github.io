@@ -1,0 +1,5 @@
+# 每个条目会显示为一个 bullet point。替换示例内容并把 `show` 改为 `true`；
+# `date` 可以留空，`text` 支持 Markdown 链接、粗体和斜体。
+- show: true
+  date: "Dec 2025"
+  text: "One paper was accepted to IEEE TMC!"

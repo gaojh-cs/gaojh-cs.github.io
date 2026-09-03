@@ -1,0 +1,8 @@
+{% if user.bio and user.bio != "" %}
+  <section aria-labelledby="about-heading">
+    <h2 id="about-heading" {% if site.style == 'dark' %}class="text-white"{% endif %}>About Me</h2>
+    <div class="github-component border border-gray-light rounded-1 bg-white p-3 text-left">
+      <div class="academic-bio text-gray-dark">{{ user.bio | markdownify }}</div>
+    </div>
+  </section>
+{% endif %}

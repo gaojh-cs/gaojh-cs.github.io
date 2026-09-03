@@ -1,0 +1,140 @@
+# 这条示例不会显示在主页。替换内容并把 `show` 改成 `true` 即可发布；
+# 新增论文时，复制完整条目并继续填写。
+# 共同第一作者：在对应作者的 `name` 下方添加 `co_primary: true`。
+
+- show: true
+  title: "Cooperative air-ground instant delivery by uavs and crowdsourced taxis: Joint uav station deployment and delivery scheduling"
+  authors:
+    - name: "Junhui Gao"
+      me: true
+    - name: "Qianru Wang"
+    - name: "Xin Zhang"
+    - name: "Juan Shi"
+    - name: "Xiang Zhao"
+    - name: "Qingye Han"
+    - name: "Yan Pan"
+      # url: "https://example.com"
+  venue: "IEEE Transactions on Mobile Computing"
+  year: 2025
+  # 用于同一年内的排序；只需填写近似日期也可以。
+  sort_date: "2024-12-01"
+  # status: "Published"
+  summary: "A short optional description of the paper's main contribution."
+  award: ""
+  links:
+    paper: "https://example.com/paper.pdf"
+    doi: "10.1109/TMC.2025.3634430"
+    # code: "https://github.com/example/repository"
+    project: ""
+    data: ""
+    slides: ""
+
+
+- show: true
+  title: "Sharing instant delivery UAVs for crowdsensing: A data-driven performance study"
+  authors:
+    - name: "Junhui Gao"
+      me: true
+    - name: "Yan Pan"
+    - name: "Xin Zhang"
+    - name: "Qingye Han"
+    - name: "Yujiao Hu"
+      # url: "https://example.com"
+  venue: "Computers & Industrial Engieering"
+  year: 2024
+  # 用于同一年内的排序；只需填写近似日期也可以。
+  sort_date: "2024-03-01"
+  # status: "Published"
+  summary: "A short optional description of the paper's main contribution."
+  award: ""
+  links:
+    paper: "https://example.com/paper.pdf"
+    doi: "10.1016/j.cie.2024.110100"
+    # code: "https://github.com/example/repository"
+    project: ""
+    data: ""
+    slides: ""
+
+- show: true
+  title: "Pioneering cooperative air-ground instant delivery using UAVs and crowdsourced couriers"
+  authors:
+    - name: "Yan Pan"
+      co_primary: true
+    - name: "Junhui Gao"
+      me: true
+      co_primary: true
+    - name: "Xin Zhang"
+    - name: "Qingye Han"
+    - name: "Yujiao Hu"
+      # url: "https://example.com"
+  venue: "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (UbiComp)"
+  year: 2024
+  # 用于同一年内的排序；只需填写近似日期也可以。
+  sort_date: "2024-11-01"
+  # status: "Published"
+  summary: "A short optional description of the paper's main contribution."
+  award: ""
+  links:
+    paper: "https://example.com/paper.pdf"
+    doi: "10.1145/3699722"
+    # code: "https://github.com/example/repository"
+    project: ""
+    data: ""
+    slides: ""
+
+
+- show: true
+  title: "Cooperative air-ground instant delivery by UAVs and crowdsourced taxis"
+  authors:
+    - name: "Junhui Gao"
+      me: true
+    - name: "Qianru Wang"
+    - name: "Xin Zhang"
+    - name: "Juan Shi"
+    - name: "Xiang Zhao"
+    - name: "Qingye Han"
+    - name: "Yan Pan"
+      # url: "https://example.com"
+  venue: "IEEE International Conference on Data Engineering (ICDE)"
+  year: 2024
+  # 用于同一年内的排序；只需填写近似日期也可以。
+  sort_date: "2024-07-01"
+  # status: "Published"
+  summary: "A short optional description of the paper's main contribution."
+  award: ""
+  links:
+    paper: "https://example.com/paper.pdf"
+    doi: "10.1109/ICDE60146.2024.00120"
+    # code: "https://github.com/example/repository"
+    project: ""
+    data: ""
+    slides: ""
+
+
+
+- show: true
+  title: "Toward efficient urban emergency response using UAVs riding crowdsourced buses"
+  authors:
+    - name: "Junhui Gao"
+      me: true
+    - name: "Qianru Wang"
+    - name: "Zhigang Li"
+    - name: "Xin Zhang"
+    - name: "Yujiao Hu"
+    - name: "Qingye Han"
+    - name: "Yan Pan"
+      # url: "https://example.com"
+  venue: "IEEE Internet of Things Journal"
+  year: 2024
+  # 用于同一年内的排序；只需填写近似日期也可以。
+  sort_date: "2024-05-01"
+  # status: "Published"
+  summary: "A short optional description of the paper's main contribution."
+  award: ""
+  links:
+    paper: "https://example.com/paper.pdf"
+    doi: "10.1109/JIOT.2024.3382120"
+    # code: "https://github.com/example/repository"
+    project: ""
+    data: ""
+    slides: ""

@@ -8,14 +8,25 @@
 
 {% assign posts_total = site.posts | size %}
 
-{% assign user = site.github.owner %}
+{% assign user = site.profile %}
+
+{% assign avatar_src = nil %}
+{% assign avatar_og_url = nil %}
+{% if user.avatar and user.avatar != "" %}
+  {% assign avatar_src = user.avatar | relative_url %}
+  {% assign avatar_og_url = user.avatar | absolute_url %}
+{% endif %}
 
 {% if page.path contains '_posts' %}
   {% assign page_title = page.title %}
   {% assign meta_description = page.content | strip_html | strip_newlines | xml_escape | truncate: 300 %}
 {% else %}
-  {% assign page_title = user.name %}
-  {% assign meta_description = user.bio | strip_html | strip_newlines | xml_escape | truncate: 300 %}
+  {% if user.name and user.name != "" %}
+    {% assign page_title = user.name %}
+  {% else %}
+    {% assign page_title = site.title | default: "Academic Homepage" %}
+  {% endif %}
+  {% assign meta_description = user.bio | markdownify | strip_html | strip_newlines | xml_escape | truncate: 300 %}
 {% endif %}
 
 <!doctype html>
@@ -24,10 +35,13 @@
     <meta charset="utf-8">
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ meta_description }}" />
-    <meta property="og:title" content="{{ user.name }}" />
-    <meta property="og:image" content="{{ user.avatar_url }}" />
+    <meta property="og:title" content="{{ page_title }}" />
+    {% if avatar_og_url %}
+      <meta property="og:image" content="{{ avatar_og_url }}" />
+    {% endif %}
     <meta property="og:description" content="{{ meta_description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
     <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
   </head>
   <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
