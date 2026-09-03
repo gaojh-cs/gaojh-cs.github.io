@@ -23,8 +23,8 @@
   summary: ""
   award: ""
   links:
-    # paper: "/assets/papers/gao-2025-tmc-cooperative-air-ground-delivery.pdf"
-    paper: ""
+    paper: "/assets/papers/TMC2025.pdf"
+    # paper: ""
     doi: "10.1109/TMC.2025.3634430"
     # code: "https://github.com/example/repository"
     project: ""
@@ -78,8 +78,8 @@
   summary: ""
   award: ""
   links:
-    # paper: "/assets/papers/pan-gao-2024-ubicomp-air-ground-delivery.pdf"
-    paper: ""
+    paper: "/assets/papers/Ubicomp2024.pdf"
+    # paper: ""
     doi: "10.1145/3699722"
     # code: "https://github.com/example/repository"
     project: ""
@@ -107,8 +107,8 @@
   summary: ""
   award: ""
   links:
-    # paper: "/assets/papers/gao-2024-icde-air-ground-delivery.pdf"
-    paper: ""
+    paper: "/assets/papers/ICDE2024.pdf"
+    # paper: ""
     doi: "10.1109/ICDE60146.2024.00120"
     # code: "https://github.com/example/repository"
     project: ""
