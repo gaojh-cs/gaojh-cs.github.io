@@ -42,6 +42,10 @@
     <meta property="og:description" content="{{ meta_description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
-    <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
+    {% assign asset_version = site.github.build_revision %}
+    {% if asset_version == nil or asset_version == "" %}
+      {% assign asset_version = site.time | date: "%s" %}
+    {% endif %}
+    <link href="{{ '/assets/styles.css' | relative_url }}?v={{ asset_version }}" rel="stylesheet" type="text/css">
   </head>
   <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>

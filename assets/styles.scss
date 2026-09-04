@@ -69,14 +69,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 82px;
+  height: 72px;
 
   &--npu {
-    flex: 0 1 96px;
+    flex: 0 1 84px;
   }
 
   &--cityu {
-    flex: 0 1 124px;
+    flex: 0 1 102px;
   }
 
   img {
@@ -84,7 +84,7 @@
     width: auto;
     height: auto;
     max-width: 100%;
-    max-height: 82px;
+    max-height: 72px;
     object-fit: contain;
   }
 }

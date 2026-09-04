@@ -5,7 +5,7 @@
 {% endif %}
 
 {% if avatar_src %}
-  <img src="{{ avatar_src }}" alt="{{ user.name }}" width="150" height="150" class="circle mb-3" style="object-fit: cover;">
+  <img src="{{ avatar_src }}" alt="{{ user.name }}" width="150" height="150" class="circle mb-3 mx-auto" style="object-fit: cover;">
 {% endif %}
 
 {% if user.name and user.name != "" %}
@@ -94,10 +94,10 @@
 {% unless site.layout == 'stacked' %}
   <div class="institution-logos">
     <div class="institution-logo institution-logo--npu">
-      <img src="{{ '/assets/images/npu_logo.jpg' | relative_url }}" alt="Northwestern Polytechnical University logo">
+      <img src="{{ '/assets/images/npu_logo.jpg' | relative_url }}" alt="Northwestern Polytechnical University logo" width="78" height="72">
     </div>
     <div class="institution-logo institution-logo--cityu">
-      <img src="{{ '/assets/images/ciytu_logo.jpg' | relative_url }}" alt="City University of Hong Kong logo">
+      <img src="{{ '/assets/images/ciytu_logo.jpg' | relative_url }}" alt="City University of Hong Kong logo" width="102" height="60">
     </div>
   </div>
 {% endunless %}
