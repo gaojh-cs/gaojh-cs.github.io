@@ -12,6 +12,13 @@
   <h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{{ user.name }}</h1>
 {% endif %}
 
+{% if user.position and user.position != "" %}
+  <p class="d-flex flex-items-center flex-justify-center mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+    {% octicon briefcase height:20 class:"mr-2 v-align-middle flex-shrink-0" fill:{{ icon_color }} aria-label:Position %}
+    <span>{{ user.position }}</span>
+  </p>
+{% endif %}
+
 {% if user.sidebar_bio and user.sidebar_bio != "" %}
   <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
     {{ user.sidebar_bio }}
