@@ -2,5 +2,6 @@
 .bundle
 .sass-cache
 _site/
+build/
 Gemfile.lock
 **/.ruby-version
