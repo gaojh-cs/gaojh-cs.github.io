@@ -1,0 +1,8 @@
+# 新增学术服务时，复制下面的完整条目并修改内容。
+- role: "Reviewer"
+  venue: "IEEE Transactions on Mobile Computing"
+  year: 2024, 2025
+
+- role: "Reviewer"
+  venue: "IEEE International Conference on Systems, Man, and Cybernetics"
+  year: 2023, 2025

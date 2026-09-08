@@ -1,0 +1,13 @@
+{% assign academic_services = site.data.academic_service %}
+
+<section aria-labelledby="academic-service-heading">
+  <h2 id="academic-service-heading" {% if site.style == 'dark' %}class="text-white"{% endif %}>Academic Service</h2>
+
+  <ul class="list-style-none pl-0">
+    {% for service in academic_services %}
+      <li class="github-component border border-gray-light rounded-1 bg-white p-3 mb-3 text-left f4 text-gray-dark">
+        <strong>{{ service.role }}</strong>{% if service.venue and service.venue != "" %}·{{ service.venue }}{% endif %}{% if service.year %}, {{ service.year }}{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
