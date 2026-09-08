@@ -37,9 +37,9 @@
   font-weight: 600;
 }
 
-.news-list {
+.news-list,
+.academic-service-list {
   margin: 0;
-  padding-left: 24px;
 
   li {
     margin-bottom: 8px;
@@ -48,6 +48,15 @@
   li:last-child {
     margin-bottom: 0;
   }
+}
+
+.news-list {
+  padding-left: 24px;
+}
+
+.academic-service-list {
+  padding-left: 0;
+  list-style: none;
 }
 
 .news-content {
