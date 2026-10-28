@@ -17,7 +17,7 @@ profile:
   # 填写完整的 Google Scholar 个人主页网址。
   google_scholar: "https://scholar.google.com/citations?user=kqo8nkMAAAAJ"
   # 把正方形头像放进仓库后填写路径，例如：
-  avatar: "/assets/images/123.jpg"
+  avatar: "/assets/images/with_blue_suit.png"
   # avatar: ""
 
 plugins:

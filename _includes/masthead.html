@@ -5,7 +5,16 @@
 {% endif %}
 
 {% if avatar_src %}
-  <img src="{{ avatar_src }}" alt="{{ user.name }}" width="150" height="150" class="circle mb-3 mx-auto" style="object-fit: cover;">
+  {% assign avatar_size = 180 %}
+  {% comment %}
+    头像尺寸单位为 px；修改上方 avatar_size 的数值即可同时调整宽高。
+    以下是已注释的预设，需要时可用其中一行替换上方的设置：
+    {% assign avatar_size = 150 %} 原始大小
+    {% assign avatar_size = 170 %} 稍大
+    {% assign avatar_size = 200 %} 大号
+    {% assign avatar_size = 210 %} 加大号
+  {% endcomment %}
+  <img src="{{ avatar_src }}" alt="{{ user.name }}" width="{{ avatar_size }}" height="{{ avatar_size }}" class="circle mb-3 mx-auto" style="object-fit: cover;">
 {% endif %}
 
 {% if user.name and user.name != "" %}
