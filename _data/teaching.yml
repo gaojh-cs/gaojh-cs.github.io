@@ -1,4 +1,5 @@
-# 新增教学经历时，复制下面的完整条目并修改角色、课程和学期。
+# 新增教学经历时，复制下面的完整条目并修改角色、院系、课程和学期。
 - role: "Teaching Assistant"
+  affiliation: "Department of Computer Science, CityUHK"
   course: "CS3201 Computer Networks"
   semester: "Semester A 2026/27"
