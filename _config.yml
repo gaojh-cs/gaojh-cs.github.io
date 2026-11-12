@@ -16,8 +16,8 @@ profile:
   email: "junhui.gao@my.cityu.edu.hk"
   # 填写完整的 Google Scholar 个人主页网址。
   google_scholar: "https://scholar.google.com/citations?user=kqo8nkMAAAAJ"
-  # 把正方形头像放进仓库后填写路径，例如：
-  avatar: "/assets/images/with_blue_suit.png"
+  # 把头像图片放进仓库后填写路径；显示宽高预设见 _includes/masthead.html。
+  avatar: "/assets/images/123.png"
   # avatar: ""
 
 plugins:

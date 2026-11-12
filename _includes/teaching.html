@@ -1,0 +1,15 @@
+{% assign teaching_entries = site.data.teaching %}
+
+<section aria-labelledby="teaching-experience-heading">
+  <h2 id="teaching-experience-heading" {% if site.style == 'dark' %}class="text-white"{% endif %}>Teaching Experience</h2>
+
+  <div class="github-component border border-gray-light rounded-1 bg-white p-3 text-left">
+    <ul class="teaching-experience-list text-gray-dark f4">
+      {% for entry in teaching_entries %}
+        <li>
+          <strong>{{ entry.role }}</strong> · {{ entry.course }}, {{ entry.semester }}.
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

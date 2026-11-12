@@ -5,16 +5,25 @@
 {% endif %}
 
 {% if avatar_src %}
-  {% assign avatar_size = 180 %}
+  {% assign avatar_width = 175 %}
+  {% assign avatar_height = 225 %}
   {% comment %}
-    头像尺寸单位为 px；修改上方 avatar_size 的数值即可同时调整宽高。
-    以下是已注释的预设，需要时可用其中一行替换上方的设置：
-    {% assign avatar_size = 150 %} 原始大小
-    {% assign avatar_size = 170 %} 稍大
-    {% assign avatar_size = 200 %} 大号
-    {% assign avatar_size = 210 %} 加大号
+    矩形头像尺寸单位为 px，三组预设均保持原照片的 7:9 宽高比。
+    当前使用中号；调整时，用对应预设的两行替换上方的宽高设置。
+
+    小号：140 × 180
+    {% assign avatar_width = 140 %}
+    {% assign avatar_height = 180 %}
+
+    中号：175 × 225
+    {% assign avatar_width = 175 %}
+    {% assign avatar_height = 225 %}
+
+    大号：210 × 270
+    {% assign avatar_width = 210 %}
+    {% assign avatar_height = 270 %}
   {% endcomment %}
-  <img src="{{ avatar_src }}" alt="{{ user.name }}" width="{{ avatar_size }}" height="{{ avatar_size }}" class="circle mb-3 mx-auto" style="object-fit: cover;">
+  <img src="{{ avatar_src }}" alt="{{ user.name }}" width="{{ avatar_width }}" height="{{ avatar_height }}" class="mb-3 mx-auto flex-shrink-0" style="object-fit: cover;">
 {% endif %}
 
 {% if user.name and user.name != "" %}
