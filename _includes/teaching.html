@@ -7,7 +7,7 @@
     <ul class="teaching-experience-list text-gray-dark f4">
       {% for entry in teaching_entries %}
         <li>
-          <strong>{{ entry.role }}</strong>{% if entry.affiliation and entry.affiliation != "" %}, {{ entry.affiliation }}{% endif %} · {{ entry.course }}, {{ entry.semester }}.
+          <strong>{{ entry.role }}</strong>, {{ entry.course }}, {{ entry.semester }}{% if entry.affiliation and entry.affiliation != "" %}, {{ entry.affiliation }}{% endif %}.
         </li>
       {% endfor %}
     </ul>
